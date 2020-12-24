@@ -12,7 +12,7 @@
         /// <param name="size">Size of the array to be retrieved</param>
         /// <param name="handler">Function that populates the memory space at the pointer</param>
         /// <returns></returns>
-        internal static IntPtr[] ArrayFrom Pointer(int size, Action<IntPtr> handler) {
+        internal static IntPtr[] ArrayFromPointer(int size, Action<IntPtr> handler) {
             var array = new IntPtr[size];
             var pointer = Marshal.AllocHGlobal(size);
 

@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\AuraDLL.cs" />
     <Compile Include="Devices\AuraDevice.cs" />
     <Compile Include="Models\DeviceMode.cs" />
     <Compile Include="Devices\GPU.cs" />

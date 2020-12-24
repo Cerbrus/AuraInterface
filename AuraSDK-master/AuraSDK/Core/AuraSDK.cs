@@ -4,7 +4,6 @@
     using System;
     using System.IO;
     using System.Linq;
-    using System.Runtime.InteropServices;
 
     using Aura.SDK.Devices;
     using Aura.SDK.Helpers;
@@ -14,7 +13,7 @@
     /// <summary>
     /// The Aura SDK wrapper
     /// </summary>
-    public class AuraSDK {
+    public class AuraSDK: AuraDLL {
         /// <summary>
         /// Array of found motherboard controllers
         /// </summary>
@@ -40,42 +39,8 @@
         /// </summary>
         private readonly IO _io;
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int EnumerateMbControllerPointer(IntPtr handles, int size);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate void SetMbModePointer(IntPtr handle, int mode);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int GetMbLedCountPointer(IntPtr handle);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate void SetMbColorPointer(IntPtr handle, byte[] colors, int size);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int EnumerateGpuControllerPointer(IntPtr handles, int size);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate void SetGpuModePointer(IntPtr handle, int mode);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int GetGpuLedCountPointer(IntPtr handle);
-
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate void SetGpuColorPointer(IntPtr handle, byte[] colors, int size);
-
-        private EnumerateMbControllerPointer _enumerateMbControllerPointer;
-        private SetMbModePointer _setMbModePointer;
-        private GetMbLedCountPointer _getMbLedCountPointer;
-        private SetMbColorPointer _setMbColorPointer;
-
-        private EnumerateGpuControllerPointer _enumerateGpuControllerPointer;
-        private SetGpuModePointer _setGpuModePointer;
-        private GetGpuLedCountPointer _getGpuLedCountPointer;
-        private SetGpuColorPointer _setGpuColorPointer;
-
         /// <summary>
-        /// Creates a new instance of the SDK class.
+        /// Creates a new instance of the SDK class
         /// </summary>
         /// <param name="io">The IO helper</param>
         public AuraSDK(IO io) 
@@ -92,13 +57,17 @@
         }
 
         /// <summary>
-        /// Reloads all controllers.
+        /// Reloads all controllers
         /// </summary>
         public void Reload() {
             Unload();
             load(_dllPath);
         }
 
+        /// <summary>
+        /// Load the Aura SDK DLL for the specified <paramref name="path"/>
+        /// </summary>
+        /// <param name="path">The DLL path</param>
         private void load(string path) {
             if (string.IsNullOrEmpty(path)) {
                 throw new ArgumentNullException("Path cannot be null or empty");
@@ -120,20 +89,18 @@
 
             _dllHandle = NativeMethods.LoadLibrary(fileName);
 
-            _enumerateMbControllerPointer = Util.GetMethod<EnumerateMbControllerPointer>(_dllHandle, "EnumerateMbController");
-            _setMbModePointer = Util.GetMethod<SetMbModePointer>(_dllHandle, "SetMbMode");
-            _getMbLedCountPointer = Util.GetMethod<GetMbLedCountPointer>(_dllHandle, "GetMbLedCount");
-            _setMbColorPointer = Util.GetMethod<SetMbColorPointer>(_dllHandle, "SetMbColor");
-
-            _enumerateGpuControllerPointer = Util.GetMethod<EnumerateGpuControllerPointer>(_dllHandle, "EnumerateGPU");
-            _setGpuModePointer = Util.GetMethod<SetGpuModePointer>(_dllHandle, "SetGPUMode");
-            _getGpuLedCountPointer = Util.GetMethod<GetGpuLedCountPointer>(_dllHandle, "GetGPULedCount");
-            _setGpuColorPointer = Util.GetMethod<SetGpuColorPointer>(_dllHandle, "SetGPUColor");
+            SetPointers(_dllHandle);
 
             Motherboards = loadDevices<Motherboard>(EnumerateMbController);
             GPUs = loadDevices<GPU>(EnumerateGpuController);
         }
 
+        /// <summary>
+        /// Load the <see cref="AuraDevice"/>s of the specified <typeparamref name="TDevice"/> type
+        /// </summary>
+        /// <typeparam name="TDevice">The type of <see cref="AuraDevice"/></typeparam>
+        /// <param name="enumerator">The DLL method used to enumerate the <see cref="AuraDevice"/>s</param>
+        /// <returns cref="AuraDevice[]">A list of found devices</returns>
         private TDevice[] loadDevices<TDevice>(Func<IntPtr, int, int> enumerator)
             where TDevice : AuraDevice {
             var deviceType = typeof(TDevice);
@@ -162,7 +129,7 @@
         }
 
         /// <summary>
-        /// Unloads the SDK, removing all references to the DLL.
+        /// Unloads the SDK, removing all references to the DLL
         /// </summary>
         public void Unload() {
             if (_dllHandle == IntPtr.Zero) {
@@ -176,15 +143,5 @@
             Motherboards = new Motherboard[0];
             GPUs = new GPU[0];
         }
-
-        internal int EnumerateMbController(IntPtr handles, int size) => _enumerateMbControllerPointer(handles, size);
-        internal void SetMbMode(IntPtr handle, int mode) => _setMbModePointer(handle, mode);
-        internal int GetMbLedCount(IntPtr handle) => _getMbLedCountPointer(handle);
-        internal void SetMbColor(IntPtr handle, byte[] colors, int size) => _setMbColorPointer(handle, colors, size);
-
-        internal int EnumerateGpuController(IntPtr handles, int size) => _enumerateGpuControllerPointer(handles, size);
-        internal void SetGpuMode(IntPtr handle, int mode) => _setGpuModePointer(handle, mode);
-        internal int GetGpuLedCount(IntPtr handle) => _getGpuLedCountPointer(handle);
-        internal void SetGpuColor(IntPtr handle, byte[] colors, int size) => _setGpuColorPointer(handle, colors, size);
     }
 }
