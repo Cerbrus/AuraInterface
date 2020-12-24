@@ -72,15 +72,13 @@
             Action<string, Device?> handler,
             Device? device = null) {
             command.AddOption(options.debugOption);
-            command.AddOption(options.colorOption);
 
-            if (!device.HasValue) {
+            if (device.HasValue) {
+                command.AddOption(options.colorOption);
                 command.AddOption(options.deviceOption);
-            }
 
-            command.Handler = device.HasValue
-                ? CommandHandler.Create<string>(color => handler(color, device))
-                : CommandHandler.Create(handler);
+                command.Handler = CommandHandler.Create<string>(color => handler(color, device));
+            }
         }
     }
 }

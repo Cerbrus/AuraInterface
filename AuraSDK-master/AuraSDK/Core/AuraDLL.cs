@@ -51,14 +51,14 @@
             _setGpuColorPointer = Util.GetMethod<SetGpuColorPointer>(_dllHandle, "SetGPUColor");
         }
 
-        protected int EnumerateMbController(IntPtr handles, int size) => _enumerateMbControllerPointer(handles, size);
-        protected void SetMbMode(IntPtr handle, int mode) => _setMbModePointer(handle, mode);
-        protected int GetMbLedCount(IntPtr handle) => _getMbLedCountPointer(handle);
-        protected void SetMbColor(IntPtr handle, byte[] colors, int size) => _setMbColorPointer(handle, colors, size);
+        internal int EnumerateMbController(IntPtr handles, int size) => _enumerateMbControllerPointer(handles, size);
+        internal void SetMbMode(IntPtr handle, int mode) => _setMbModePointer(handle, mode);
+        internal int GetMbLedCount(IntPtr handle) => _getMbLedCountPointer(handle);
+        internal void SetMbColor(IntPtr handle, byte[] colors, int size) => _setMbColorPointer(handle, colors, size);
 
-        protected int EnumerateGpuController(IntPtr handles, int size) => _enumerateGpuControllerPointer(handles, size);
-        protected void SetGpuMode(IntPtr handle, int mode) => _setGpuModePointer(handle, mode);
-        protected int GetGpuLedCount(IntPtr handle) => _getGpuLedCountPointer(handle);
-        protected void SetGpuColor(IntPtr handle, byte[] colors, int size) => _setGpuColorPointer(handle, colors, size);
+        internal int EnumerateGpuController(IntPtr handles, int size) => _enumerateGpuControllerPointer(handles, size);
+        internal void SetGpuMode(IntPtr handle, int mode) => _setGpuModePointer(handle, mode);
+        internal int GetGpuLedCount(IntPtr handle) => _getGpuLedCountPointer(handle);
+        internal void SetGpuColor(IntPtr handle, byte[] colors, int size) => _setGpuColorPointer(handle, colors, size);
     }
 }

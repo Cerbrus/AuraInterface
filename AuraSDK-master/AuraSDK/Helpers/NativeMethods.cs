@@ -5,7 +5,7 @@
     /// <summary>
     /// The native methods helper class
     /// </summary>
-    internal static class NativeMethods {
+    public static class NativeMethods {
         /// <summary>
         /// Adds a directory to the search path used to locate DLLs for the application.
         /// </summary>
@@ -19,7 +19,7 @@
         /// To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         [DllImport("kernel32.dll")]
-        internal static extern bool SetDllDirectory(string lpPathName);
+        public static extern bool SetDllDirectory(string lpPathName);
 
         /// <summary>
         /// Loads the specified module into the address space of the calling process. The specified module may cause other modules to be loaded.
@@ -37,7 +37,7 @@
         /// If the function fails, the return value is NULL. To get extended error information, call  <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         [DllImport("kernel32.dll", SetLastError = true)]
-        internal static extern IntPtr LoadLibrary(string dllToLoad);
+        public static extern IntPtr LoadLibrary(string dllToLoad);
 
         /// <summary>
         /// Frees the loaded dynamic-link library (DLL) module and, if necessary, decrements its reference count. 
@@ -53,7 +53,7 @@
         /// To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         [DllImport("kernel32.dll")]
-        internal static extern bool FreeLibrary(IntPtr hLibModule);
+        public static extern bool FreeLibrary(IntPtr hLibModule);
 
         /// <summary>
         /// Retrieves the address of an exported function or variable from the specified dynamic-link library (DLL).
@@ -74,6 +74,6 @@
         /// To get extended error information, call <see cref="Marshal.GetLastWin32Error"/>.
         /// </returns>
         [DllImport("kernel32.dll")]
-        internal static extern IntPtr GetProcAddress(IntPtr hModule, string lpProcName);
+        public static extern IntPtr GetProcAddress(IntPtr hModule, string lpProcName);
     }
 }

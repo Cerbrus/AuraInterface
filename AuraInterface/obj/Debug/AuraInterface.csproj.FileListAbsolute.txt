@@ -2,6 +2,7 @@ E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AURA_SDK.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AuraInterface.exe.config
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AuraInterface.exe
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AuraInterface.pdb
+E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\Aura.SDK.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AuraInterface.Shared.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Buffers.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.CommandLine.dll
@@ -9,6 +10,7 @@ E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Memory.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Numerics.Vectors.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\AuraInterface.Shared.pdb
+E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\Aura.SDK.pdb
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Buffers.xml
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.CommandLine.pdb
 E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\System.Memory.xml
@@ -19,5 +21,3 @@ E:\DEV\RGB\AuraInterface\AuraInterface\obj\Debug\AuraInterface.csproj.CoreCompil
 E:\DEV\RGB\AuraInterface\AuraInterface\obj\Debug\AuraInterface.csproj.CopyComplete
 E:\DEV\RGB\AuraInterface\AuraInterface\obj\Debug\AuraInterface.exe
 E:\DEV\RGB\AuraInterface\AuraInterface\obj\Debug\AuraInterface.pdb
-E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\Aura.SDK.dll
-E:\DEV\RGB\AuraInterface\AuraInterface\bin\Debug\Aura.SDK.pdb

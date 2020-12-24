@@ -80,7 +80,7 @@
         /// </summary>
         /// <param name="color">The color to use</param>
         /// <param name="device">The specified <see cref="Device"/></param>
-        private void setColor(string color, Device? device = null) {
+        private void setColor(string color, Device? device = Device.Motherboard) {
             Color parsedColor = default;
 
             try {
@@ -99,7 +99,7 @@
         /// </summary>
         /// <param name="color">The <see cref="Color"/> to use</param>
         /// <param name="device">The specified <see cref="Device"/></param>
-        private void setColor(Color color, Device? device = null) {
+        private void setColor(Color color, Device? device = Device.Motherboard) {
             AuraDevice targetDevice;
             switch (device) {
                 case Device.Motherboard:

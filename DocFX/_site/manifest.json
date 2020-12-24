@@ -1,0 +1,548 @@
+{
+  "homepages": [],
+  "source_base_path": "E:/DEV/RGB/AuraInterface/DocFX",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "3B9H64ep9xQYT71VqJGRHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "m+qTcVcSuFAoAmhL7mW/rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "ENfIW2o2n7lBaL7a/2pqzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "f9OI/EwEhAQcb5u3olpomA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.EnumerateGpuControllerPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.EnumerateGpuControllerPointer.html",
+          "hash": "4xPlGRl72wIfxIlOagDGfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.EnumerateMbControllerPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.EnumerateMbControllerPointer.html",
+          "hash": "t/k5hO72w+Ug3eTQ9IvScg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer.html",
+          "hash": "ek+DO9uFRoidhggZsZai7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.GetMbLedCountPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.GetMbLedCountPointer.html",
+          "hash": "aKnlGJJiNQlprLljmmgPEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.SetGpuColorPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.SetGpuColorPointer.html",
+          "hash": "vk72fqAn5y+hyDk4IqHvAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.SetGpuModePointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.SetGpuModePointer.html",
+          "hash": "koZwPwustcz36UkGG6V7Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.SetMbColorPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.SetMbColorPointer.html",
+          "hash": "7ijFOFgtqSen8B14MwJjGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.SetMbModePointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.SetMbModePointer.html",
+          "hash": "PrxC4YdTeuJOFzAglB/TcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.html",
+          "hash": "xu8MJ8MgNGq5Q3/dwXx9BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraSDK.html",
+          "hash": "fp2ZtM5B9IFk6szaJ3cprA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.html",
+          "hash": "Nt7GH18rEF1zSF5/4vOqoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Devices.AuraDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Devices.AuraDevice.html",
+          "hash": "Poj44AndnUQKW+tEwNAhIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Devices.GPU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Devices.GPU.html",
+          "hash": "SExgGykgwZVHtZOE2Y4Hbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Devices.Motherboard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Devices.Motherboard.html",
+          "hash": "FvaDy/Xjzq1xaxmtEVNYpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Devices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Devices.html",
+          "hash": "Ec5QkD/9jafeEYbokJH+Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Helpers.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Helpers.NativeMethods.html",
+          "hash": "FtcKdSIxhE2r2N+KQ4266Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Helpers.html",
+          "hash": "TCEJPHxO+ZwoiBxaafQp8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Models.DeviceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Models.DeviceMode.html",
+          "hash": "sWBr3sN9nsyC9k17KmeSWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Models.html",
+          "hash": "Xw8qtHzg5yDKrNhxS1/soA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Core.Aura.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Core.Aura.html",
+          "hash": "qEVTMhURBrknS2u7ZknBXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Core.html",
+          "hash": "nRG0PwlDIr5BQwCI+gAmVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Extensions.ColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Extensions.ColorExtensions.html",
+          "hash": "1RO3oQqr5q85wwOmHRNvhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Extensions.html",
+          "hash": "h2eCwhwBUGtw5fl5Qj7B4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Helpers.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Helpers.Commands.html",
+          "hash": "sBupuSWlAeq/J6Nf+3qpUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Helpers.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Helpers.Options.html",
+          "hash": "1R+HOKt9N4MajXVjV7hz2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Helpers.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Helpers.Parser.html",
+          "hash": "EqlciOVzlcxT1YROyvFAew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Helpers.html",
+          "hash": "jVpb5k24LdtFJjNHtKA9TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Program.html",
+          "hash": "j1XX5+0fi9hYXkaXTH69BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Shared.Helpers.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Shared.Helpers.IO.html",
+          "hash": "YNKK9wQrzQGLhSCaQNXC9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Shared.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Shared.Helpers.html",
+          "hash": "SgRZNJhstLUxNyPx3C/m3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Shared.Models.Device.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Shared.Models.Device.html",
+          "hash": "Nd+gkjKJ1QdW/OjHlQldGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.Shared.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.Shared.Models.html",
+          "hash": "QhVKcKW7bWkVHNMBZDIRVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraInterface.html",
+          "hash": "qzldRpmlNs2ac2bn8rNdCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraSDKTests.AuraSDKTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraSDKTests.AuraSDKTests.html",
+          "hash": "UVNJD/yOP5x5aFYRcKULFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/AuraSDKTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AuraSDKTests.html",
+          "hash": "wDOTOIlFL5TlWIrMMr//gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Elr/jhqEQv2fd1vNr9oPZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "LN2sPFqPxkJvtl+fsVar3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 35,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

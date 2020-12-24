@@ -51,9 +51,11 @@
         /// Build the "--device" option configuration
         /// </summary>
         /// <returns cref="Option">The "--device" option configuration</returns>
-        private Option buildDeviceOption() =>
-            buildOption<Device>("The device to update", "--device", "-d");
-
+        private Option buildDeviceOption() {
+            var option = buildOption<Device?>("The device to update", "--device", "-d");
+            option.IsRequired = false;
+            return option;
+        }
         /// <summary>
         /// Build an option configuration
         /// </summary>

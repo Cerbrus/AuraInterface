@@ -1,5 +1,5 @@
 .cache/
-.vs/**
+.vs/
 packages/
-obj/
-bin/
+**/obj/
+**/bin/
