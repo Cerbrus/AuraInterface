@@ -1,5 +1,0 @@
-E:\DEV\RGB\AuraInterface\AuraInterface.Shared\bin\Debug\AuraInterface.Shared.dll
-E:\DEV\RGB\AuraInterface\AuraInterface.Shared\bin\Debug\AuraInterface.Shared.pdb
-E:\DEV\RGB\AuraInterface\AuraInterface.Shared\obj\Debug\AuraInterface.Shared.csproj.CoreCompileInputs.cache
-E:\DEV\RGB\AuraInterface\AuraInterface.Shared\obj\Debug\AuraInterface.Shared.dll
-E:\DEV\RGB\AuraInterface\AuraInterface.Shared\obj\Debug\AuraInterface.Shared.pdb
