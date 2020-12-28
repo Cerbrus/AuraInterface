@@ -29,6 +29,11 @@
         private readonly Action<IntPtr,byte[], int> _setColor;
 
         /// <summary>
+        /// Instruct the SDK to get the color for the device.
+        /// </summary>
+        private readonly Func<IntPtr, byte[]> _getColor;
+
+        /// <summary>
         /// The device's led count
         /// </summary>
         protected int _ledCount;
@@ -39,13 +44,15 @@
         /// <param name="handle">The device's pointer</param>
         internal AuraDevice(
             IntPtr handle,
+            Func<IntPtr, int> getLedCount,
             Action<IntPtr, int> setMode,
             Action<IntPtr, byte[], int> setColor,
-            Func<IntPtr, int> getLedCount) {
+            Func<IntPtr, byte[]> getColor = null) {
             _handle = handle;
+            _ledCount = getLedCount(handle);
             _setMode = setMode;
             _setColor = setColor;
-            _ledCount = getLedCount(handle);
+            _getColor = getColor;
         }
 
         /// <summary>
@@ -54,6 +61,28 @@
         /// <param name="mode"></param>
         public void SetMode(DeviceMode mode) =>
             _setMode(_handle, (int)mode);
+
+        /// <summary>
+        /// Get the device's colors.
+        /// </summary>
+        /// <returns cref="Color[]">An array of colors</returns>
+        public Color[] GetColors() {
+            if (_getColor == null) {
+                return null;
+            }
+
+            var bytes = _getColor(_handle);
+            var colors = new Color[LedCount];
+
+            for (var i = 0; i < bytes.Length; i += 3) {
+                colors[i / 3] = Color.FromArgb(
+                    bytes[i],
+                    bytes[i + 1],
+                    bytes[i + 2]);
+            }
+
+            return colors;
+        }
 
         /// <summary>
         /// Set the device's colors. There must be the same number of colors as there are zones on the device.

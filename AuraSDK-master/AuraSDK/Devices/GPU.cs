@@ -15,8 +15,8 @@
         public GPU(AuraSDK sdk, IntPtr handle)
             : base(
                   handle,
+                  sdk.GetGpuLedCount,
                   sdk.SetGpuMode,
-                  sdk.SetGpuColor,
-                  sdk.GetGpuLedCount) { }
+                  sdk.SetGpuColor) { }
     }
 }

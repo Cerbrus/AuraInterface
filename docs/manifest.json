@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.EnumerateGpuControllerPointer.html",
-          "hash": "4xPlGRl72wIfxIlOagDGfg=="
+          "hash": "VGkeHcnLRRH9T6aLMXdH1w=="
         }
       },
       "is_incremental": false,
@@ -77,11 +77,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.GetGpuColorPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.GetGpuColorPointer.html",
+          "hash": "IHmZmlBQlIsn9v+eyxvZag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer.html",
-          "hash": "ek+DO9uFRoidhggZsZai7w=="
+          "hash": "Y4ssaYLxM5opjHwdojpUSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Aura.SDK.Core.AuraDLL.GetMbColorPointer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Aura.SDK.Core.AuraDLL.GetMbColorPointer.html",
+          "hash": "USGiJXSYb9E0vwdx+ivmeg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.SetGpuColorPointer.html",
-          "hash": "vk72fqAn5y+hyDk4IqHvAg=="
+          "hash": "Z+0d/OIX+BCkw9Ko0KLWqg=="
         }
       },
       "is_incremental": false,
@@ -117,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.SetGpuModePointer.html",
-          "hash": "koZwPwustcz36UkGG6V7Sg=="
+          "hash": "YWdbwAmXUMZGnaAO5l1dYA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.SetMbColorPointer.html",
-          "hash": "7ijFOFgtqSen8B14MwJjGA=="
+          "hash": "zwHjgtPg1GY+aMEgSPyM5w=="
         }
       },
       "is_incremental": false,
@@ -153,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraDLL.html",
-          "hash": "xu8MJ8MgNGq5Q3/dwXx9BA=="
+          "hash": "6hP3Nr9NDJpniDqF4U36qQ=="
         }
       },
       "is_incremental": false,
@@ -165,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.AuraSDK.html",
-          "hash": "fp2ZtM5B9IFk6szaJ3cprA=="
+          "hash": "fHeKmoFD2/3tm7lET48KGw=="
         }
       },
       "is_incremental": false,
@@ -177,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Core.html",
-          "hash": "Nt7GH18rEF1zSF5/4vOqoA=="
+          "hash": "FLBle2KSAt8igOQrKhdEOw=="
         }
       },
       "is_incremental": false,
@@ -189,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Devices.AuraDevice.html",
-          "hash": "Poj44AndnUQKW+tEwNAhIQ=="
+          "hash": "2vhOlIVFD01CpcTYZ0W7ag=="
         }
       },
       "is_incremental": false,
@@ -201,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Devices.GPU.html",
-          "hash": "SExgGykgwZVHtZOE2Y4Hbg=="
+          "hash": "PCazGvH4k7YgREALw43hKw=="
         }
       },
       "is_incremental": false,
@@ -213,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Aura.SDK.Devices.Motherboard.html",
-          "hash": "FvaDy/Xjzq1xaxmtEVNYpQ=="
+          "hash": "1OzHX/PefYJGoLh0tRCpAw=="
         }
       },
       "is_incremental": false,
@@ -285,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuraInterface.Core.Aura.html",
-          "hash": "qEVTMhURBrknS2u7ZknBXg=="
+          "hash": "a/gyZbjbI0j02Eq8lrNEqw=="
         }
       },
       "is_incremental": false,
@@ -333,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuraInterface.Helpers.Commands.html",
-          "hash": "sBupuSWlAeq/J6Nf+3qpUA=="
+          "hash": "BSr4KcW4knyCGzVoPzZg4g=="
         }
       },
       "is_incremental": false,
@@ -345,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuraInterface.Helpers.Options.html",
-          "hash": "1R+HOKt9N4MajXVjV7hz2g=="
+          "hash": "rSyad3WXsfpggXN8Lew+kg=="
         }
       },
       "is_incremental": false,
@@ -393,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AuraInterface.Shared.Helpers.IO.html",
-          "hash": "YNKK9wQrzQGLhSCaQNXC9w=="
+          "hash": "xissRs5sY/nxcpwVNFbqew=="
         }
       },
       "is_incremental": false,
@@ -477,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Elr/jhqEQv2fd1vNr9oPZQ=="
+          "hash": "T0HxR05ym/3JP8iaSiU84w=="
         }
       },
       "is_incremental": false,
@@ -516,7 +540,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 35,
+          "total_file_count": 37,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -15,6 +15,9 @@
         protected delegate int GetMbLedCountPointer(IntPtr handle);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        protected delegate void GetMbColorPointer(IntPtr handle, byte[] colors, int size);
+
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         protected delegate void SetMbColorPointer(IntPtr handle, byte[] colors, int size);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
@@ -27,11 +30,15 @@
         protected delegate int GetGpuLedCountPointer(IntPtr handle);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        protected delegate void GetGpuColorPointer(IntPtr handle, byte[] colors, int size);
+
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         protected delegate void SetGpuColorPointer(IntPtr handle, byte[] colors, int size);
 
         protected EnumerateMbControllerPointer _enumerateMbControllerPointer;
         protected SetMbModePointer _setMbModePointer;
         protected GetMbLedCountPointer _getMbLedCountPointer;
+        protected GetMbColorPointer _getMbColorPointer;
         protected SetMbColorPointer _setMbColorPointer;
 
         protected EnumerateGpuControllerPointer _enumerateGpuControllerPointer;
@@ -43,6 +50,7 @@
             _enumerateMbControllerPointer = Util.GetMethod<EnumerateMbControllerPointer>(_dllHandle, "EnumerateMbController");
             _setMbModePointer = Util.GetMethod<SetMbModePointer>(_dllHandle, "SetMbMode");
             _getMbLedCountPointer = Util.GetMethod<GetMbLedCountPointer>(_dllHandle, "GetMbLedCount");
+            _getMbColorPointer = Util.GetMethod<GetMbColorPointer>(_dllHandle, "GetMbColor");
             _setMbColorPointer = Util.GetMethod<SetMbColorPointer>(_dllHandle, "SetMbColor");
 
             _enumerateGpuControllerPointer = Util.GetMethod<EnumerateGpuControllerPointer>(_dllHandle, "EnumerateGPU");
@@ -54,6 +62,13 @@
         internal int EnumerateMbController(IntPtr handles, int size) => _enumerateMbControllerPointer(handles, size);
         internal void SetMbMode(IntPtr handle, int mode) => _setMbModePointer(handle, mode);
         internal int GetMbLedCount(IntPtr handle) => _getMbLedCountPointer(handle);
+        internal byte[] GetMbColor(IntPtr handle) {
+            var size = GetMbLedCount(handle) * 3;
+            var colors = new byte[size];
+            _getMbColorPointer(handle, colors, size);
+
+            return colors;
+        }
         internal void SetMbColor(IntPtr handle, byte[] colors, int size) => _setMbColorPointer(handle, colors, size);
 
         internal int EnumerateGpuController(IntPtr handles, int size) => _enumerateGpuControllerPointer(handles, size);

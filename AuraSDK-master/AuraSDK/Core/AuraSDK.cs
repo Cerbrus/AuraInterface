@@ -77,7 +77,7 @@
             var directory = Path.GetDirectoryName(path);
 
             if (!File.Exists(path)) {
-                throw new FileNotFoundException(path + " not found");
+                throw new FileNotFoundException(path + " not found. Current working directory: " + Directory.GetCurrentDirectory());
             }
 
             _dllPath = path;

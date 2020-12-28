@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="color-picker" data-color="{{ current_color }}"></p>
+
+        <p class="tiles">
+            {%for r in range(blocks)%}
+            {%for g in range(blocks)%}
+            {%for b in range(blocks)%}
+            <span class="tiles-tile"
+                  style="background-color:{{ get_color(blocks - 1, r, g, b) }}"
+                  title="{{ get_color(blocks - 1, r, g, b) }}"></span>
+            {%endfor%}
+            {%endfor%}
+            {%endfor%}
+        </p>
+    </div>
+</div>
+
+{% endblock %}

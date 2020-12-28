@@ -15,8 +15,9 @@
         public Motherboard(AuraSDK sdk, IntPtr handle)
             : base(
                   handle,
+                  sdk.GetMbLedCount,
                   sdk.SetMbMode,
                   sdk.SetMbColor,
-                  sdk.GetMbLedCount) { }
+                  sdk.GetMbColor) { }
     }
 }

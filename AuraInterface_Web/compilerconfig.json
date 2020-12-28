@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "AuraInterface_Web/static/content/app/colorpicker.css",
+    "inputFile": "AuraInterface_Web/static/content/app/colorpicker.less"
+  },
+  {
+    "outputFile": "AuraInterface_Web/static/content/app/site.css",
+    "inputFile": "AuraInterface_Web/static/content/app/site.less"
+  }
+]

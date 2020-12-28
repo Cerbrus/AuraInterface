@@ -13,6 +13,8 @@
     using global::Aura.SDK.Devices;
     using global::Aura.SDK.Models;
 
+    using Newtonsoft.Json;
+
     /// <summary>
     /// A <see cref="AuraSDK"/> wrapper.
     /// </summary>
@@ -62,7 +64,7 @@
         /// <param name="args"></param>
         public Aura(string[] args) {
             _options = new Options();
-            _commands = new Commands(_options, setColor);
+            _commands = new Commands(_options, setColor, getColor);
             _parser = new Parser(_commands.RootCommand, _options, args);
 
             _io = new IO(_parser.IsDebug);
@@ -72,6 +74,26 @@
 
             _io.ReadLine();
         }
+
+        #region Get color
+
+        /// <summary>
+        /// Get the <see cref="Color"/> of the <see cref="Motherboard"/> <see cref="AuraDevice"/>
+        /// </summary>
+        private void getColor() {
+            if (Motherboard == null) {
+                _io.Exception(true, "No motherboards have been found");
+                return;
+            }
+
+            var colors = Motherboard.GetColors();
+            var htmlColors = colors.Select(ColorTranslator.ToHtml);
+
+            var json = JsonConvert.SerializeObject(htmlColors);
+            _io.WriteLine(json, true);
+        }
+
+        #endregion Get color
 
         #region Set color
 
@@ -100,19 +122,7 @@
         /// <param name="color">The <see cref="Color"/> to use</param>
         /// <param name="device">The specified <see cref="Device"/></param>
         private void setColor(Color color, Device? device = Device.Motherboard) {
-            AuraDevice targetDevice;
-            switch (device) {
-                case Device.Motherboard:
-                    targetDevice = Motherboard;
-                    break;
-                case Device.GPU:
-                    targetDevice = GPU;
-                    break;
-                default:
-                    _io.Exception(true, "Incorrect device specified.");
-                    return;
-            }
-
+            var targetDevice = getTargetDevice(device);
             if (targetDevice == null) {
                 _io.Exception(true, "The specified device could not be found.");
                 return;
@@ -134,5 +144,20 @@
         }
 
         #endregion Set color
+
+        /// <summary>
+        /// Get the target device
+        /// </summary>
+        /// <param name="device">The specified <see cref="Device"/></param>
+        /// <returns cref="AuraDevice">The requested device</returns>
+        private AuraDevice getTargetDevice(Device? device = Device.Motherboard) {
+            switch (device) {
+                case Device.Motherboard: return Motherboard;
+                case Device.GPU: return GPU;
+                default:
+                    _io.Exception(true, "Incorrect device specified.");
+                    return null;
+            }
+        }
     }
 }

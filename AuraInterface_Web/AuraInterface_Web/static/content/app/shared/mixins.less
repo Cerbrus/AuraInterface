@@ -1,0 +1,49 @@
+﻿@import "variables";
+
+.border(@width: 2px) {
+    box-shadow: 0 0 0 @width @color_border;
+}
+
+.pseudo-element(@position: absolute) {
+    content: "";
+    display: block;
+    position: @position;
+}
+
+.input_prefix(@letter) {
+    &:before {
+        .pseudo-element();
+        content: ~'"@{letter}"';
+        text-transform: uppercase;
+        color: @color_input;
+        left: 4px;
+        font-weight: bold;
+    }
+}
+
+.inputs(@a, @b, @c, @left) {
+    @abc: ~"@{a}@{b}@{c}";
+
+    &_@{abc} {
+        &_@{a},
+        &_@{b},
+        &_@{c} {
+            left: @left;
+        }
+
+        &_@{a} {
+            top: 52px;
+            .input_prefix(@a);
+        }
+
+        &_@{b} {
+            top: 82px;
+            .input_prefix(@b);
+        }
+
+        &_@{c} {
+            top: 112px;
+            .input_prefix(@c);
+        }
+    }
+}

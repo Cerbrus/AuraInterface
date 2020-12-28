@@ -41,10 +41,11 @@
         /// Writes the specified string value to the standard output stream
         /// </summary>
         /// <param name="value">The value to write.</param>
+        /// <param name="always">Log this message even when debug is disabled</param>
         /// <exception cref="IOException">An I/O error occurred</exception>
         /// <returns cref="IO">This instance, for chaining</returns>
-        public IO Write(string value) {
-            if (Debug) {
+        public IO Write(string value, bool always = false) {
+            if (Debug || always) {
                 Console.Write(value);
             }
 
@@ -54,10 +55,11 @@
         /// <summary>
         /// Writes the current line terminator to the standard output stream
         /// </summary>
+        /// <param name="always">Log this message even when debug is disabled</param>
         /// <exception cref="IOException">An I/O error occurred</exception>
         /// <returns cref="IO">This instance, for chaining</returns>
-        public IO WriteLine() {
-            if (Debug) {
+        public IO WriteLine(bool always = false) {
+            if (Debug || always) {
                 Console.WriteLine();
             }
 
@@ -69,9 +71,10 @@
         /// </summary>
         /// <exception cref="IOException">An I/O error occurred</exception>
         /// <param name="value">The value to write</param>
+        /// <param name="always">Log this message even when debug is disabled</param>
         /// <returns cref="IO">This instance, for chaining</returns>
-        public IO WriteLine(string value) {
-            if (Debug) {
+        public IO WriteLine(string value, bool always = false) {
+            if (Debug || always) {
                 Console.WriteLine(value);
             }
 

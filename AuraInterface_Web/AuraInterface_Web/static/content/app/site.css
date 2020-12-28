@@ -1,0 +1,21 @@
+﻿html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding-top: 65px;
+}
+.body-content {
+  min-height: calc(100vh - 130px);
+}
+footer {
+  height: 50px;
+  margin-top: 15px;
+}
+footer,
+.navbar-inverse {
+  background-color: #222222;
+  border: none;
+  color: #898989;
+  line-height: 50px;
+}

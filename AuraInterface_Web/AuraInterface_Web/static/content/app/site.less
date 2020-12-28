@@ -1,0 +1,29 @@
+@import "shared/mixins";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding-top: @height_menu + @padding;
+}
+
+.body-content {
+    @reserved: @height_menu + @padding + @height_footer + @padding;
+    min-height: calc(100vh ~"-" @reserved);
+}
+
+
+footer {
+    height: @height_footer;
+    margin-top: @padding;
+}
+
+footer,
+.navbar-inverse {
+    background-color: @color_navbar;
+    border: none;
+    color: @color_input;
+    line-height: @height_footer;
+}

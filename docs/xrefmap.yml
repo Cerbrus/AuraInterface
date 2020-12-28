@@ -31,6 +31,12 @@ references:
   commentId: F:Aura.SDK.Core.AuraDLL._getGpuLedCountPointer
   fullName: Aura.SDK.Core.AuraDLL._getGpuLedCountPointer
   nameWithType: AuraDLL._getGpuLedCountPointer
+- uid: Aura.SDK.Core.AuraDLL._getMbColorPointer
+  name: _getMbColorPointer
+  href: api/Aura.SDK.Core.AuraDLL.html#Aura_SDK_Core_AuraDLL__getMbColorPointer
+  commentId: F:Aura.SDK.Core.AuraDLL._getMbColorPointer
+  fullName: Aura.SDK.Core.AuraDLL._getMbColorPointer
+  nameWithType: AuraDLL._getMbColorPointer
 - uid: Aura.SDK.Core.AuraDLL._getMbLedCountPointer
   name: _getMbLedCountPointer
   href: api/Aura.SDK.Core.AuraDLL.html#Aura_SDK_Core_AuraDLL__getMbLedCountPointer
@@ -73,12 +79,24 @@ references:
   commentId: T:Aura.SDK.Core.AuraDLL.EnumerateMbControllerPointer
   fullName: Aura.SDK.Core.AuraDLL.EnumerateMbControllerPointer
   nameWithType: AuraDLL.EnumerateMbControllerPointer
+- uid: Aura.SDK.Core.AuraDLL.GetGpuColorPointer
+  name: AuraDLL.GetGpuColorPointer
+  href: api/Aura.SDK.Core.AuraDLL.GetGpuColorPointer.html
+  commentId: T:Aura.SDK.Core.AuraDLL.GetGpuColorPointer
+  fullName: Aura.SDK.Core.AuraDLL.GetGpuColorPointer
+  nameWithType: AuraDLL.GetGpuColorPointer
 - uid: Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer
   name: AuraDLL.GetGpuLedCountPointer
   href: api/Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer.html
   commentId: T:Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer
   fullName: Aura.SDK.Core.AuraDLL.GetGpuLedCountPointer
   nameWithType: AuraDLL.GetGpuLedCountPointer
+- uid: Aura.SDK.Core.AuraDLL.GetMbColorPointer
+  name: AuraDLL.GetMbColorPointer
+  href: api/Aura.SDK.Core.AuraDLL.GetMbColorPointer.html
+  commentId: T:Aura.SDK.Core.AuraDLL.GetMbColorPointer
+  fullName: Aura.SDK.Core.AuraDLL.GetMbColorPointer
+  nameWithType: AuraDLL.GetMbColorPointer
 - uid: Aura.SDK.Core.AuraDLL.GetMbLedCountPointer
   name: AuraDLL.GetMbLedCountPointer
   href: api/Aura.SDK.Core.AuraDLL.GetMbLedCountPointer.html
@@ -223,6 +241,19 @@ references:
   commentId: F:Aura.SDK.Devices.AuraDevice._ledCount
   fullName: Aura.SDK.Devices.AuraDevice._ledCount
   nameWithType: AuraDevice._ledCount
+- uid: Aura.SDK.Devices.AuraDevice.GetColors
+  name: GetColors()
+  href: api/Aura.SDK.Devices.AuraDevice.html#Aura_SDK_Devices_AuraDevice_GetColors
+  commentId: M:Aura.SDK.Devices.AuraDevice.GetColors
+  fullName: Aura.SDK.Devices.AuraDevice.GetColors()
+  nameWithType: AuraDevice.GetColors()
+- uid: Aura.SDK.Devices.AuraDevice.GetColors*
+  name: GetColors
+  href: api/Aura.SDK.Devices.AuraDevice.html#Aura_SDK_Devices_AuraDevice_GetColors_
+  commentId: Overload:Aura.SDK.Devices.AuraDevice.GetColors
+  isSpec: "True"
+  fullName: Aura.SDK.Devices.AuraDevice.GetColors
+  nameWithType: AuraDevice.GetColors
 - uid: Aura.SDK.Devices.AuraDevice.LedCount
   name: LedCount
   href: api/Aura.SDK.Devices.AuraDevice.html#Aura_SDK_Devices_AuraDevice_LedCount
@@ -480,15 +511,15 @@ references:
   commentId: T:AuraInterface.Helpers.Commands
   fullName: AuraInterface.Helpers.Commands
   nameWithType: Commands
-- uid: AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}})
-  name: Commands(Options, Action<String, Nullable<Device>>)
-  href: api/AuraInterface.Helpers.Commands.html#AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___
-  commentId: M:AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}})
-  name.vb: Commands(Options, Action(Of String, Nullable(Of Device)))
-  fullName: AuraInterface.Helpers.Commands.Commands(AuraInterface.Helpers.Options, System.Action<System.String, System.Nullable<AuraInterface.Shared.Models.Device>>)
-  fullName.vb: AuraInterface.Helpers.Commands.Commands(AuraInterface.Helpers.Options, System.Action(Of System.String, System.Nullable(Of AuraInterface.Shared.Models.Device)))
-  nameWithType: Commands.Commands(Options, Action<String, Nullable<Device>>)
-  nameWithType.vb: Commands.Commands(Options, Action(Of String, Nullable(Of Device)))
+- uid: AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}},System.Action)
+  name: Commands(Options, Action<String, Nullable<Device>>, Action)
+  href: api/AuraInterface.Helpers.Commands.html#AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___System_Action_
+  commentId: M:AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}},System.Action)
+  name.vb: Commands(Options, Action(Of String, Nullable(Of Device)), Action)
+  fullName: AuraInterface.Helpers.Commands.Commands(AuraInterface.Helpers.Options, System.Action<System.String, System.Nullable<AuraInterface.Shared.Models.Device>>, System.Action)
+  fullName.vb: AuraInterface.Helpers.Commands.Commands(AuraInterface.Helpers.Options, System.Action(Of System.String, System.Nullable(Of AuraInterface.Shared.Models.Device)), System.Action)
+  nameWithType: Commands.Commands(Options, Action<String, Nullable<Device>>, Action)
+  nameWithType.vb: Commands.Commands(Options, Action(Of String, Nullable(Of Device)), Action)
 - uid: AuraInterface.Helpers.Commands.#ctor*
   name: Commands
   href: api/AuraInterface.Helpers.Commands.html#AuraInterface_Helpers_Commands__ctor_
@@ -546,6 +577,12 @@ references:
   commentId: F:AuraInterface.Helpers.Options.deviceOption
   fullName: AuraInterface.Helpers.Options.deviceOption
   nameWithType: Options.deviceOption
+- uid: AuraInterface.Helpers.Options.getColorOption
+  name: getColorOption
+  href: api/AuraInterface.Helpers.Options.html#AuraInterface_Helpers_Options_getColorOption
+  commentId: F:AuraInterface.Helpers.Options.getColorOption
+  fullName: AuraInterface.Helpers.Options.getColorOption
+  nameWithType: Options.getColorOption
 - uid: AuraInterface.Helpers.Parser
   name: Parser
   href: api/AuraInterface.Helpers.Parser.html
@@ -734,12 +771,12 @@ references:
   isSpec: "True"
   fullName: AuraInterface.Shared.Helpers.IO.WithColor
   nameWithType: IO.WithColor
-- uid: AuraInterface.Shared.Helpers.IO.Write(System.String)
-  name: Write(String)
-  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_Write_System_String_
-  commentId: M:AuraInterface.Shared.Helpers.IO.Write(System.String)
-  fullName: AuraInterface.Shared.Helpers.IO.Write(System.String)
-  nameWithType: IO.Write(String)
+- uid: AuraInterface.Shared.Helpers.IO.Write(System.String,System.Boolean)
+  name: Write(String, Boolean)
+  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_Write_System_String_System_Boolean_
+  commentId: M:AuraInterface.Shared.Helpers.IO.Write(System.String,System.Boolean)
+  fullName: AuraInterface.Shared.Helpers.IO.Write(System.String, System.Boolean)
+  nameWithType: IO.Write(String, Boolean)
 - uid: AuraInterface.Shared.Helpers.IO.Write*
   name: Write
   href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_Write_
@@ -747,18 +784,18 @@ references:
   isSpec: "True"
   fullName: AuraInterface.Shared.Helpers.IO.Write
   nameWithType: IO.Write
-- uid: AuraInterface.Shared.Helpers.IO.WriteLine
-  name: WriteLine()
-  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_WriteLine
-  commentId: M:AuraInterface.Shared.Helpers.IO.WriteLine
-  fullName: AuraInterface.Shared.Helpers.IO.WriteLine()
-  nameWithType: IO.WriteLine()
-- uid: AuraInterface.Shared.Helpers.IO.WriteLine(System.String)
-  name: WriteLine(String)
-  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_WriteLine_System_String_
-  commentId: M:AuraInterface.Shared.Helpers.IO.WriteLine(System.String)
-  fullName: AuraInterface.Shared.Helpers.IO.WriteLine(System.String)
-  nameWithType: IO.WriteLine(String)
+- uid: AuraInterface.Shared.Helpers.IO.WriteLine(System.Boolean)
+  name: WriteLine(Boolean)
+  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_WriteLine_System_Boolean_
+  commentId: M:AuraInterface.Shared.Helpers.IO.WriteLine(System.Boolean)
+  fullName: AuraInterface.Shared.Helpers.IO.WriteLine(System.Boolean)
+  nameWithType: IO.WriteLine(Boolean)
+- uid: AuraInterface.Shared.Helpers.IO.WriteLine(System.String,System.Boolean)
+  name: WriteLine(String, Boolean)
+  href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_WriteLine_System_String_System_Boolean_
+  commentId: M:AuraInterface.Shared.Helpers.IO.WriteLine(System.String,System.Boolean)
+  fullName: AuraInterface.Shared.Helpers.IO.WriteLine(System.String, System.Boolean)
+  nameWithType: IO.WriteLine(String, Boolean)
 - uid: AuraInterface.Shared.Helpers.IO.WriteLine*
   name: WriteLine
   href: api/AuraInterface.Shared.Helpers.IO.html#AuraInterface_Shared_Helpers_IO_WriteLine_

@@ -115,19 +115,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Cerbrus/AuraInterface/new/main/apiSpec/new?filename=AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___.md&amp;value=---%0Auid%3A%20AuraInterface.Helpers.Commands.%23ctor(AuraInterface.Helpers.Options%2CSystem.Action%7BSystem.String%2CSystem.Nullable%7BAuraInterface.Shared.Models.Device%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Cerbrus/AuraInterface/new/main/apiSpec/new?filename=AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___System_Action_.md&amp;value=---%0Auid%3A%20AuraInterface.Helpers.Commands.%23ctor(AuraInterface.Helpers.Options%2CSystem.Action%7BSystem.String%2CSystem.Nullable%7BAuraInterface.Shared.Models.Device%7D%7D%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L22">View Source</a>
+    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L24">View Source</a>
   </span>
   <a id="AuraInterface_Helpers_Commands__ctor_" data-uid="AuraInterface.Helpers.Commands.#ctor*"></a>
-  <h4 id="AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___" data-uid="AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}})">Commands(Options, Action&lt;String, Nullable&lt;Device&gt;&gt;)</h4>
+  <h4 id="AuraInterface_Helpers_Commands__ctor_AuraInterface_Helpers_Options_System_Action_System_String_System_Nullable_AuraInterface_Shared_Models_Device___System_Action_" data-uid="AuraInterface.Helpers.Commands.#ctor(AuraInterface.Helpers.Options,System.Action{System.String,System.Nullable{AuraInterface.Shared.Models.Device}},System.Action)">Commands(Options, Action&lt;String, Nullable&lt;Device&gt;&gt;, Action)</h4>
   <div class="markdown level1 summary"><p>Build the commandline commands</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Commands(Options options, Action&lt;string, Device?&gt; handler)</code></pre>
+    <pre><code class="lang-csharp hljs">public Commands(Options options, Action&lt;string, Device?&gt; setColor, Action getColor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,8 +147,14 @@
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Nullable</span>&lt;<a class="xref" href="AuraInterface.Shared.Models.Device.html">Device</a>&gt;&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>The function to call when this command is executed</p>
+        <td><span class="parametername">setColor</span></td>
+        <td><p>The setter function to call when this command is executed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">getColor</span></td>
+        <td><p>The getter function to call when this command is executed</p>
 </td>
       </tr>
     </tbody>
@@ -160,7 +166,7 @@
     <a href="https://github.com/Cerbrus/AuraInterface/new/main/apiSpec/new?filename=AuraInterface_Helpers_Commands_RootCommand.md&amp;value=---%0Auid%3A%20AuraInterface.Helpers.Commands.RootCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L15">View Source</a>
+    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L16">View Source</a>
   </span>
   <a id="AuraInterface_Helpers_Commands_RootCommand_" data-uid="AuraInterface.Helpers.Commands.RootCommand*"></a>
   <h4 id="AuraInterface_Helpers_Commands_RootCommand" data-uid="AuraInterface.Helpers.Commands.RootCommand">RootCommand</h4>
@@ -197,7 +203,7 @@
                     <a href="https://github.com/Cerbrus/AuraInterface/new/main/apiSpec/new?filename=AuraInterface_Helpers_Commands.md&amp;value=---%0Auid%3A%20AuraInterface.Helpers.Commands%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Cerbrus/AuraInterface/blob/main/AuraInterface/Helpers/Commands.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
