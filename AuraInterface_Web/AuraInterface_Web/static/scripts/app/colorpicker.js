@@ -4,7 +4,7 @@
  * Author: Stefan Petre www.eyecon.ro
  * 
  * Dual licensed under the MIT and GPL licenses
- * 
+ * Source: https://www.eyecon.ro/colorpicker/
  */
 (function ($) {
 	var ColorPicker = function () {
